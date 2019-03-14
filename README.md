@@ -1,4 +1,4 @@
-yii2-jsonld-helper
+Forked yii2-jsonld-helper
 ================
 
 Yii2 helper class for registering structured data markup in [JSON-LD](http://json-ld.org/) format.
