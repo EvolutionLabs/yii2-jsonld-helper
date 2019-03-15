@@ -43,13 +43,14 @@ class JsonLDHelper extends BaseObject
                 } else {
                     // Is it ok to omit URL here or not? Google is not clear on that:
                     // http://stackoverflow.com/questions/33688608/how-to-markup-the-last-non-linking-item-in-breadcrumbs-list-using-json-ld
-                    $breadcrumbList[] = (object)[
+                    // Clarified in the meantime, cause the Google Structured Data Testing Tool shows an error in this case. DISABLING
+                    /*$breadcrumbList[] = (object)[
                         "@type" => "http://schema.org/ListItem",
                         "http://schema.org/position" => $position,
                         "http://schema.org/item" => (object)[
                             "http://schema.org/name" => $breadcrumb,
                         ]
-                    ];
+                    ];*/
                 }
                 $position++;
             }
